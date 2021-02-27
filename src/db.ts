@@ -1,0 +1,38 @@
+let materias = [{
+  codigo: 'SCC0221',
+  nome_pt_br: 'Introdução à Ciência de Computação I',
+  nome_en_us: 'Introduction to Computer Science I',
+  creditos_aula: 4,
+  creditos_trabalho: 1,
+  carga_horaria_total: 90,
+  tipo: 'semestral',
+  objetivos_pt_br: 'Apresentar os conceitos básicos para o desenvolvimento de programas, utilizando uma linguagem de programação como apoio.',
+  objetivos_en_us: 'Present the basic concepts of computational thinking applied to problem solving. Develop skills to write small programs using a programming language. Basic concepts about computers and computing. Problem solving and algorithm design. Programming structures. Simple data types. Modularization. Composite data types. Files. Debugging. Structured programming language.',
+  requisitos: [],
+},
+{
+  codigo: 'SMA0353',
+  nome_pt_br: 'Cálculo I',
+  nome_en_us: 'Calculus I',
+  creditos_aula: 4,
+  creditos_trabalho: 0,
+  carga_horaria_total: 60,
+  tipo: 'semestral',
+  objetivos_pt_br: 'Fazer com que os alunos familiarizem-se com os conceitos de limite, continuidade, diferenciabilidade e primitivas de funções de uma variável.',
+  objetivos_en_us: 'Students should be able to understand the meaning of limit, continuity, derivative, and primitive of a one real variable function.',
+  requisitos: [],
+},
+{
+  codigo: 'SMA0354',
+  nome_pt_br: 'Cálculo II',
+  nome_en_us: 'Calculus II',
+  creditos_aula: 4,
+  creditos_trabalho: 0,
+  carga_horaria_total: 60,
+  tipo: 'semestral',
+  objetivos_pt_br: 'Familiarizar os alunos com os resultados fundamentais relativos a: integração definida, técnicas de integração, diferenciabilidade de funções de várias variáveis e extremos de funções de várias variáveis.',
+  objetivos_en_us: 'Students should be able to understand the meaning of definite integrals and how to compute them. They also should be able to understand the meaning of limit, continuity, and differentiability of functions of several variables.',
+  requisitos: ['SMA0353'],
+}];
+
+export default materias
