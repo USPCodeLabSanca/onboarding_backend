@@ -16,13 +16,9 @@ app.use(express.json());
 // Inserindo rotas
 app.use(routes);
 
-// Rota teste
-app.get("/", (request, response) => {
-    response.json({ message: "Server on 3333!" });
-})
-
 // Função para iniciar o servidor
-app.listen(3333, () => { console.log("Server on 3333!") });
+const port = process.env.PORT || 3333
+app.listen(port, () => { console.log("Server on", port) });
 
 
 module.exports = app
