@@ -1,5 +1,5 @@
-import express from "express"
-import routes from "./routes/index"
+const express = require("express")
+const routes = require("./routes/index");
 
 /*
 POST /materias/:codigo_da_materia
@@ -25,4 +25,4 @@ app.get("/", (request, response) => {
 app.listen(3333, () => { console.log("Server on 3333!") });
 
 
-export default app;
+module.exports = app
