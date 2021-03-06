@@ -2,7 +2,6 @@ const express = require("express")
 const cors = require('cors')
 const routes = require("./routes/index");
 
-
 /*
 POST /materias/:codigo_da_materia
 GET /materias - Retorna todo array de matérias.
@@ -12,13 +11,13 @@ DELETE /materias/:codigo_da_materia -  Deleta uma matéria.
 */
 
 const app = express();
+app.use(cors());
 
 // Middleware para Leitura do JSON
 app.use(express.json());
 
 // Inserindo rotas
 app.use(routes);
-app.use(cors());
 
 // Função para iniciar o servidor
 const port = process.env.PORT || 3333
