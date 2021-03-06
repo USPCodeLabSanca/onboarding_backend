@@ -1,5 +1,7 @@
 const express = require("express")
+const cors = require('cors')
 const routes = require("./routes/index");
+
 
 /*
 POST /materias/:codigo_da_materia
@@ -13,8 +15,10 @@ const app = express();
 
 // Middleware para Leitura do JSON
 app.use(express.json());
+
 // Inserindo rotas
 app.use(routes);
+app.use(cors());
 
 // Função para iniciar o servidor
 const port = process.env.PORT || 3333
