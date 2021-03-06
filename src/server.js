@@ -12,6 +12,7 @@ DELETE /materias/:codigo_da_materia -  Deleta uma matéria.
 
 const app = express();
 app.use(cors());
+app.options('*', cors())
 
 // Middleware para Leitura do JSON
 app.use(express.json());
